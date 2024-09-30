@@ -22,17 +22,7 @@ const About = () => {
                     CloudNiine
                   </p>
                   <p className="text-white m-4">
-                    At CloudNiine, we're committed to transforming the way you
-                    refuel. Our innovative gas slot booking app is designed to
-                    eliminate the hassles of traditional refueling by providing
-                    a seamless, efficient, and stress-free experience. With
-                    CloudNiine, you can book your gas slots in advance, skip the
-                    long lines, and enjoy peace of mind knowing that you'll
-                    never run out of gas. Our mission is to deliver convenience,
-                    reliability, and satisfaction to every driver, ensuring that
-                    your journey is always smooth and enjoyable. Join us at
-                    CloudNiine and elevate your refueling experience to new
-                    heights.
+                  We’re dedicated to revolutionizing your refueling experience. Our cutting-edge gas slot booking app is designed to streamline the refueling process, making it simple and hassle-free. You can reserve your gas slots ahead of time, avoid long wait times, and rest easy knowing you won’t run out of fuel. Our goal is to provide convenience, reliability, and satisfaction to every driver, ensuring that your travels are always smooth and enjoyable. Experience the future of refueling and take your driving experience to the next level.
                   </p>
                 </div>
               </div>
