@@ -49,37 +49,37 @@ const Footer = () => {
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" />
 
                   <Link
-                    to="https://maps.app.goo.gl/3NnjqkYoGnE7B8ch8"
+                    to="https://www.google.co.in/maps"
                     target="_new"
                     className="text-white text-decoration-none"
                   >
                     <p>
                       <i className="fas fa-home mr-3"></i>
                       <span className="px-2">
-                        Pollachi, Coimbatore, Tamil Nadu
+                        Kuruvampatti, Trichy, Tamil Nadu
                       </span>
                     </p>
                   </Link>
 
                   <Link
-                    to="mailto:ajithironmark42@gmail.com"
+                    to="mailto:lekkaiyarajaraj2020@gmail.com"
                     target="_new"
                     className="text-white text-decoration-none"
                   >
                     <p>
                       <i className="fas fa-envelope mr-3"></i>
-                      <span className="px-2">ajithironmark42@gmail.com</span>
+                      <span className="px-2">lekkaiyarajaraj2020@gmail.com</span>
                     </p>
                   </Link>
 
                   <Link
-                    to="tel:+911234567890"
+                    to="tel:+916383574223"
                     target="_new"
                     className="text-white text-decoration-none"
                   >
                     <p>
                       <i className="fas fa-phone mr-3"></i>
-                      <span className="px-2">+91 12345 67890</span>
+                      <span className="px-2">+91 6383574223</span>
                     </p>
                   </Link>
                 </div>
@@ -93,7 +93,7 @@ const Footer = () => {
             </div>
             <div>
               <Link
-                to="https://www.facebook.com/"
+                to="https://www.facebook.com/lekkaiyaraja.lekkaiyaraja.7"
                 target="_new"
                 className="text-white me-4"
               >
@@ -121,14 +121,14 @@ const Footer = () => {
                 <i className="fab fa-instagram"></i>
               </Link>
               <Link
-                to="https://in.linkedin.com/"
+                to="https://www.linkedin.com/in/lekkaiyaraja-t-9ba2a0213//"
                 target="_new"
                 className="text-white me-4"
               >
                 <i className="fab fa-linkedin"></i>
               </Link>
               <Link
-                to="https://github.com/ajith-11399/"
+                to="https://github.com/Lekkaiyaraja"
                 target="_new"
                 className="text-white me-4"
               >
