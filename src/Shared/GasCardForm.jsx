@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import gasData from "../GasData/GasData.js";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
@@ -27,7 +27,7 @@ const GasCardForm = () => {
     date: "",
     timeSlot: "",
     phoneNumber: "",
-    totalPrice: price + deliveryCharge,
+    totalPrice: price + deliveryCharge
   };
 
   const validationSchema = Yup.object().shape({
@@ -44,13 +44,13 @@ const GasCardForm = () => {
     date: Yup.string().required("Date should not be empty"),
     timeSlot: Yup.string().required("Time Slot should not be empty"),
     address: Yup.string().required("Address should not be empty"),
-    quantity: Yup.string().required("Quantity should not be empty"),
+    quantity: Yup.string().required("Quantity should not be empty")
   });
 
   const handleSubmit = async (values, { setSubmitting }) => {
     const totalPrice =
       Number(price) * Number(values.quantity) + Number(deliveryCharge);
-  
+
     const payload = {
       fullName: values.fullName,
       email: values.email,
@@ -60,16 +60,16 @@ const GasCardForm = () => {
       address: values.address,
       quantity: values.quantity,
       totalPrice: totalPrice,
-      product: values.product,
+      product: values.product
     };
-  
+
     try {
       const res = await axios.post(
-        "https://gas-slot-booking-app-backend.onrender.com/api/user/booking",
+        "https://gas-slot-booking-app-backend-wbo0.onrender.com/api/user/booking",
         payload
       );
       setMessage(res.data.message);
-  
+
       if (res.data.message === "Your order has been placed successfully!") {
         if (window.Razorpay) {
           const options = {
@@ -85,7 +85,7 @@ const GasCardForm = () => {
                   {
                     orderId: response.razorpay_order_id,
                     paymentId: response.razorpay_payment_id,
-                    signature: response.razorpay_signature,
+                    signature: response.razorpay_signature
                   }
                 );
                 alert(`Payment ID: ${response.razorpay_payment_id}`);
@@ -100,16 +100,16 @@ const GasCardForm = () => {
             prefill: {
               name: values.fullName,
               email: values.email,
-              contact: values.phoneNumber,
+              contact: values.phoneNumber
             },
             notes: {
-              address: values.address,
+              address: values.address
             },
             theme: {
-              color: "#3399cc",
-            },
+              color: "#3399cc"
+            }
           };
-  
+
           const rzp1 = new window.Razorpay(options);
           rzp1.open();
         } else {
@@ -125,8 +125,6 @@ const GasCardForm = () => {
     }
     setSubmitting(false);
   };
-  
-
 
   return (
     <div className="col-lg-6 col-md-12 col-sm-12 my-2">
