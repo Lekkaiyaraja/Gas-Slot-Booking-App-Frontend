@@ -47,7 +47,7 @@ const FeaturedGas = () => {
                   <div className="d-flex flex-column">
                     <Link to={`/gas/${element.id}`} className="mb-2">
                       <button className="btn btn-primary w-100 fw-medium">
-                        Detail <i className="fa-solid fa-circle-info"></i>
+                        Order <i className="fa-solid fa-circle-info"></i>
                       </button>
                     </Link>
                   </div>

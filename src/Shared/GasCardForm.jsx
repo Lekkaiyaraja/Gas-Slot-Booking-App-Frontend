@@ -76,12 +76,13 @@ const GasCardForm = () => {
             key: "rzp_test_m1LXPc7yWDCdO6",
             amount: totalPrice * 100,
             currency: "INR",
-            name: "CloudNiine",
+            name: "FuelOne",
             description: "Gas Booking Payment",
             handler: async (response) => {
               try {
                 await axios.post(
-                  "https://gas-slot-booking-app-backend.onrender.com/api/user/update-payment-status",
+                  "https://gas-slot-booking-app-backend-wbo0.onrender.com/api/user/update-payment-status",
+                  
                   {
                     orderId: response.razorpay_order_id,
                     paymentId: response.razorpay_payment_id,
@@ -94,7 +95,7 @@ const GasCardForm = () => {
                 navigate("/thanks");
               } catch (error) {
                 console.error("Payment status update failed:", error);
-                setMessage("Failed to update payment status.");
+                // setMessage("Failed to update payment status.");
               }
             },
             prefill: {

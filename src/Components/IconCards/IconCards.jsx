@@ -1,4 +1,6 @@
 import React from "react";
+import "./IconCard.css";
+
 
 const IconCards = () => {
   const iconCards = [
@@ -6,7 +8,7 @@ const IconCards = () => {
       icon: "fa-solid fa-gas-pump text-primary px-2",
       title: "Reliability",
       paragraph:
-        "CloudNiine ensures that users can count on their booked gas slots being available when they arrive. Our system is designed to minimize overbooking and guarantee.",
+        "FuelOne ensures that users can count on their booked gas slots being available when they arrive. Our system is designed to minimize overbooking and guarantee.",
     },
     {
       icon: "fa-regular fa-circle-up text-primary px-2",
@@ -18,25 +20,25 @@ const IconCards = () => {
       icon: "fa-solid fa-headset text-primary px-2",
       title: "Customer Support",
       paragraph:
-        "CloudNiine offers real-time updates on gas station availability, wait times, and booking confirmations. This ensures users have the most accurate information.",
+        "FuelOne offers real-time updates on gas station availability, wait times, and booking confirmations. This ensures users have the most accurate information.",
     },
     {
       icon: "fa-solid fa-shield text-primary px-2",
       title: "Safety and Hygiene",
       paragraph:
-        "CloudNiine partners with gas stations that adhere to the highest safety and hygiene standards. This ensures a clean and secure environment for users.",
+        "FuelOne partners with gas stations that adhere to the highest safety and hygiene standards. This ensures a clean and secure environment for users.",
     },
     {
       icon: "fa-solid fa-globe text-primary px-2",
       title: "Wide Network",
       paragraph:
-        "With a broad network of partnered gas stations, CloudNiine offers extensive coverage, ensuring users can find and book slots at convenient locations.",
+        "With a broad network of partnered gas stations, FuelOne offers extensive coverage, ensuring users can find and book slots at convenient locations.",
     },
     {
       icon: "fa-solid fa-indian-rupee-sign text-primary px-2",
       title: "Transparent Pricing",
       paragraph:
-        "CloudNiine offers transparent pricing, with no hidden fees or unexpected charges. Users can trust that the price they see is the price they pay.",
+        "FuelOne offers transparent pricing, with no hidden fees or unexpected charges. Users can trust that the price they see is the price they pay.",
     },
   ];
 

@@ -1,0 +1,12 @@
+.login-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  }
+  
+  .login-img img:hover {
+    transform: scale(1.1) rotate(-2deg);
+    filter: drop-shadow(6px 6px 15px rgba(255, 77, 77, 0.5));
+  }

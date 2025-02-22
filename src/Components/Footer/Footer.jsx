@@ -1,149 +1,89 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="container-fluid bg-primary">
-        <div className="text-center text-lg-start text-white">
-          <section className="pt-5">
-            <div className="container pt-2 text-md-start">
-              <div className="row align-items-center justify-content-start">
-                <div className="col-lg-3 col-md-6 col-sm-12 mx-auto mb-2">
-                  <Link to="/home" className="navbar-brand my-5">
-                    CloudNiine
-                  </Link>
+    <div className="footer-container">
+      <div className="footer-content container">
+        <section>
+          <div className="footer-details row">
+            <div className="footer-section col-lg-4 col-md-6 text-center text-md-start">
+              <Link to="/home" className="navbar-brand">
+                FuelOne
+              </Link>
+              <p>
+                At FuelOne, we revolutionize refueling with our innovative gas
+                slot booking app. Enjoy a seamless, efficient, and stress-free
+                experience by booking your gas slots in advance.
+              </p>
+            </div>
+
+            <div className="footer-section col-lg-4 col-md-6 text-center text-md-start">
+              <h6>Contact</h6>
+              <hr />
+
+              <div className="contact-info">
+                <Link to="https://www.google.co.in/maps" target="_blank">
                   <p>
-                    At CloudNiine, we revolutionize refueling with our
-                    innovative gas slot booking app. Enjoy a seamless,
-                    efficient, and stress-free experience by booking your gas
-                    slots in advance.
+                    <i className="fas fa-home"></i>
+                    Trichy, Tamil Nadu
                   </p>
-                </div>
+                </Link>
 
-                <div className="col-lg-3 col-md-6 col-sm-12mx-auto mb-2">
-                  <h6 className="text-uppercase fw-bold">Products</h6>
-                  <hr className="mb-4 mt-0 d-inline-block mx-auto" />
+                <Link to="mailto:lekkaiyarajaraj2020@gmail.com" target="_blank">
                   <p>
-                    <Link to="/home" className="text-white text-decoration-none">
-                      Home
-                    </Link>
+                    <i className="fas fa-envelope"></i>
+                    lekkaiyarajaraj321@gmail.com
                   </p>
+                </Link>
+
+                <Link to="tel:+916383574223" target="_blank">
                   <p>
-                    <Link
-                      to="/about-us"
-                      className="text-white text-decoration-none"
-                    >
-                      About Us
-                    </Link>
+                    <i className="fas fa-phone"></i>
+                    +91 0123456789
                   </p>
-                  <p>
-                    <Link to="/gas" className="text-white text-decoration-none">
-                      Gas
-                    </Link>
-                  </p>
-                </div>
-
-                <div className="col-lg-3 col-md-6 col-sm-12 mx-auto mb-2">
-                  <h6 className="text-uppercase fw-bold">Contact</h6>
-                  <hr className="mb-4 mt-0 d-inline-block mx-auto" />
-
-                  <Link
-                    to="https://www.google.co.in/maps"
-                    target="_new"
-                    className="text-white text-decoration-none"
-                  >
-                    <p>
-                      <i className="fas fa-home mr-3"></i>
-                      <span className="px-2">
-                        Kuruvampatti, Trichy, Tamil Nadu
-                      </span>
-                    </p>
-                  </Link>
-
-                  <Link
-                    to="mailto:lekkaiyarajaraj2020@gmail.com"
-                    target="_new"
-                    className="text-white text-decoration-none"
-                  >
-                    <p>
-                      <i className="fas fa-envelope mr-3"></i>
-                      <span className="px-2">lekkaiyarajaraj2020@gmail.com</span>
-                    </p>
-                  </Link>
-
-                  <Link
-                    to="tel:+916383574223"
-                    target="_new"
-                    className="text-white text-decoration-none"
-                  >
-                    <p>
-                      <i className="fas fa-phone mr-3"></i>
-                      <span className="px-2">+91 6383574223</span>
-                    </p>
-                  </Link>
-                </div>
+                </Link>
               </div>
             </div>
-          </section>
-          <hr style={{ border: "2px solid" }} />
-          <section className="d-flex justify-content-between px-4 pb-3">
-            <div className="me-5">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            <div>
-              <Link
-                to="https://www.facebook.com/lekkaiyaraja.lekkaiyaraja.7"
-                target="_new"
-                className="text-white me-4"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link
-                to="https://x.com/?lang=en"
-                target="_new"
-                className="text-white me-4"
-              >
-                <i className="fab fa-twitter"></i>
-              </Link>
-              <Link
-                to="https://www.google.co.in/"
-                target="_new"
-                className="text-white me-4"
-              >
-                <i className="fab fa-google"></i>
-              </Link>
-              <Link
-                to="https://www.instagram.com"
-                target="_new"
-                className="text-white me-4"
-              >
-                <i className="fab fa-instagram"></i>
-              </Link>
-              <Link
-                to="https://www.linkedin.com/in/lekkaiyaraja-t-9ba2a0213//"
-                target="_new"
-                className="text-white me-4"
-              >
-                <i className="fab fa-linkedin"></i>
-              </Link>
-              <Link
-                to="https://github.com/Lekkaiyaraja"
-                target="_new"
-                className="text-white me-4"
-              >
-                <i className="fab fa-github"></i>
-              </Link>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section className="social-icons text-center">
+          <div>
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <div className="social-links">
+            <Link to="mailto:lekkaiyarajaraj2020@gmail.com" target="_blank" className="facebook">
+            <i class="fa-solid fa-envelope"></i>
+            </Link>
+            {/* <Link to="https://x.com/?lang=en" target="_blank" className="twitter">
+              <i className="fab fa-twitter"></i>
+            </Link> */}
+            <Link to="https://my-personal-portfolio-developer.netlify.app/" target="_blank" className="google">
+              <i className="fab fa-google"></i>
+            </Link>
+            {/* <Link to="https://www.instagram.com" target="_blank" className="instagram">
+              <i className="fab fa-instagram"></i>
+            </Link> */}
+            <Link to="https://www.linkedin.com/in/lekkaiyaraja-t-9ba2a0213/" target="_blank" className="linkedin">
+              <i className="fab fa-linkedin"></i>
+            </Link>
+            <Link to="https://github.com/Lekkaiyaraja" target="_blank" className="github">
+              <i className="fab fa-github"></i>
+            </Link>
+          </div>
+        </section>
       </div>
-      <div className="text-center bg-dark p-3 text-light">
-        &copy; {new Date().getFullYear()}&nbsp;&nbsp;
-        <Link to="/" className="text-primary text-decoration-none">
-          CloudNiine
-        </Link>&nbsp;
-        All Rights Reserved. 
+
+      <div className="footer-bottom text-center">
+        &copy; {new Date().getFullYear()}&nbsp;
+        <Link to="/" className="footer-brand">
+          FuelOne
+        </Link>
+        &nbsp;All Rights Reserved.
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import logInImg from "../assets/login.jpg";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "./Login.css";
 
 const Login = () => {
   const [message, setMessage] = useState("");

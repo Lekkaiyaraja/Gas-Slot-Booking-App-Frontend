@@ -1,42 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&display=swap');
 
-.font-curv {
-    font-family: "Satisfy", cursive !important;
+/* body {
+    scroll-behavior: smooth;
+} */
+
+/* Smooth Loading Animation */
+.container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.2s ease-in-out forwards;
 }
 
-.text-violet {
-    color: #ee82ee !important;
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+/* Typing Animation Without Blinking Cursor */
+.typing-text::after {
+    content: "";
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(15, end) infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "S";
+    }
+    5% {
+        content: "Sk";
+    }
+    10% {
+        content: "Ski";
+    }
+    15% {
+        content: "Skip";
+    }
+    20% {
+        content: "Skip ";
+    }
+    25% {
+        content: "Skip t";
+    }
+    30% {
+        content: "Skip th";
+    }
+    35% {
+        content: "Skip the";
+    }
+    40% {
+        content: "Skip the ";
+    }
+    45% {
+        content: "Skip the L";
+    }
+    50% {
+        content: "Skip the Li";
+    }
+    55% {
+        content: "Skip the Lin";
+    }
+    60% {
+        content: "Skip the Line";
+    }
+    65% {
+        content: "Skip the Lines";
+    }
+    70% {
+        content: "Skip the Lines.";
+    }
+    80% {
+        content: "Skip the Lines";
+    }
+    100% {
+        content: "Skip the Lines";
+    }
+}
+
+/* 3D Image Hover Effect */
+.cloudNine {
+    width: 100% !important;
+    border-radius: 30px !important;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cloudNine:hover {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Call-to-Action Button */
 .bg-violet {
     background-color: #ee82ee !important;
     border: 2px solid #ee82ee !important;
+    transition: all 0.3s ease-in-out;
 }
 
 .bg-violet:hover {
     background-color: white !important;
-    border: spx solid #ee82ee !important;
+    border: 2px solid #ee82ee !important;
     color: #ee82ee !important;
+    transform: scale(1.1);
 }
 
-.cloudNine {
-    width: 100% !important;
-    border-radius: 30px !important;
-}
-
-.fa-circle-down{
+/* Scroll Indicator */
+.fa-circle-down {
     color: #ee82ee !important;
-    font-size: 20px;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    animation: bounce 1.5s infinite;
 }
 
-.fa-circle-down:hover{
+.fa-circle-down:hover {
     color: #0d6efd !important;
+    transform: scale(1.2);
 }
 
+/* Scroll Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Responsive Adjustments */
 @media (max-width: 576px) {
     .desc {
         display: none !important;
+    }
+
+    .cloudNine {
+        border-radius: 15px !important;
     }
 }
 
@@ -44,7 +151,5 @@
     .hero-text {
         margin-top: 50px;
         text-align: center !important;
-        align-items: center !important;
-        justify-content: center !important;
     }
 }

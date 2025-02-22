@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import signUpImg from "../assets/sign-up.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import  "./Register.css";
 
 const Register = () => {
   const [message, setMessage] = useState("");
@@ -70,7 +71,7 @@ const Register = () => {
     <div className="container p-2 mt-5 mb-5 reg-box">
       <h2 className="text-primary mb-4 text-center">
         Sign up to become our&nbsp;
-        <span className="font-curv text-violet">CloudNine family</span>
+        <span className="font-curv text-violet">FuelOne family</span>
       </h2>
       <div className="row align-items-center justify-content-center m-3">
         <div className="col-lg-4 col-md-6 col-sm-12">

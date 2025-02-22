@@ -1,0 +1,115 @@
+/* General Styles */
+/* .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  } */
+  
+  /* 3D Form Box */
+  .reg-box {
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 255, 76, 0.1), -4px -4px 15px rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    transition: all 0.4s ease-in-out;
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+  }
+  
+  .reg-box:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2), -6px -6px 20px rgba(255, 255, 255, 0.8);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  }
+  
+  /* Title */
+  h2 {
+    font-weight: bold;
+    color: #ff4d4d;
+    text-shadow: 2px 2px 5px rgba(255, 77, 77, 0.3);
+  }
+  
+  .font-curv {
+    font-family: "Pacifico", cursive;
+    color: #6a0dad;
+    text-shadow: 2px 2px 5px rgba(106, 13, 173, 0.5);
+  }
+  
+  /* Input Fields - Neon Effect */
+  .form-control {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0px 0px 15px rgba(255, 77, 77, 0.6);
+    transform: scale(1.05);
+  }
+  
+  /* 3D Button with Glow */
+  .btn-primary {
+    background: linear-gradient(135deg, #ff4d4d, #0ca2a7);
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    box-shadow: 4px 4px 10px rgba(255, 77, 77, 0.3);
+    transform: perspective(100px) translateZ(5px);
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #ff9900, #38e91d);
+    box-shadow: 6px 6px 15px rgba(255, 77, 77, 0.5);
+    transform: perspective(100px) translateZ(10px) scale(1.05);
+  }
+  
+  /* Image Animation */
+  .sign-up-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  }
+  
+  .sign-up-img img:hover {
+    transform: scale(1.1) rotate(-2deg);
+    filter: drop-shadow(6px 6px 15px rgba(255, 77, 77, 0.5));
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .col-lg-4 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .reg-box {
+      padding: 20px;
+    }
+  
+    .btn-primary {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .form-control {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

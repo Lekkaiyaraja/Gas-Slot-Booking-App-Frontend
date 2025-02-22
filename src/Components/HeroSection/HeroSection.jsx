@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
 import girl from "./girl.webp";
-import { Link } from "react-router-dom";    
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -11,10 +11,11 @@ const HeroSection = () => {
           <div className="col-lg-7 col-md-12 col-sm-12 order-2 order-lg-1 hero-text">
             <div className="text-center text-lg-start">
               <h1 className="display-md-2 display-4 fw-normal text-violet font-curv">
-                Skip the Lines.
+                <span className="typing-text"></span>
                 <br />
-                Relax and Refuel with CloudNiine
+                Relax and Refuel with FuelOne
               </h1>
+
               <p className="desc font-curv text-violet">
                 The only frustration you absolutely have to avoid? Running out
                 of gas.
